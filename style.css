@@ -93,26 +93,28 @@ main,
 }
 
 .menu-link:hover {
-  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
-    contrast(87%);
+  color: #bdae82;  
   transition: 0.3s;
+  
 }
 
 .en {
-  padding-right: 10px;
-  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
-    contrast(87%);
+  padding-right: 10px;  
+  color: #bdae82;
+  /*color: #ffffff;*/
+  transition: 0.3s;
+  
 }
 
 .ru {
   padding-left: 10px;
+  color: #ffffff;
   transition: 0.3s;
 }
-
-.ru:hover {
-  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
-    contrast(87%);
-    transition: 0.3s;
+.en:hover, 
+.ru:hover {  
+    color: #bdae82;
+    transition: 0.3s;    
 }
 
 .hero-container {
@@ -165,7 +167,11 @@ main,
   margin-top: 35px;
   width: 220px;
   height: 55px;
-  font-size: 20px;
-  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
-    contrast(87%);
+  font-size: 20px;  
+  background-color: #bdae82;
+}
+
+.hero-button:hover {
+  color: #ffffff;
+  transition: 0.3s;
 }
