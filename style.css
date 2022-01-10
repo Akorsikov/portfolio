@@ -83,8 +83,7 @@ main,
 .menu-link {
   padding: 0 15px;  
   list-style: none;
-  text-decoration: none;
-  
+  text-decoration: none;  
   font-weight: 400;
   font-size: 20px;
   line-height: 50px;
@@ -102,8 +101,7 @@ main,
   padding-right: 10px;  
   color: #bdae82;
   /*color: #ffffff;*/
-  transition: 0.3s;
-  
+  transition: 0.3s;  
 }
 
 .ru {
@@ -111,6 +109,7 @@ main,
   color: #ffffff;
   transition: 0.3s;
 }
+
 .en:hover, 
 .ru:hover {  
     color: #bdae82;
@@ -180,11 +179,19 @@ main,
   justify-content: center;
   width: 50%;  
   margin: 70px auto 0 auto;
-
-  overflow-x: hidden;
+  padding-left: 30px;  
   position: relative;
-  padding-left: 30px;
+  /*overflow-x: hidden;*/
+}
 
+.section-title::before {
+  content: "";
+  position: absolute;
+  top: 57px;
+  left: 12px;  
+  width: 270px; 
+  border: 1px solid #bdae82; 
+  
 }
 
 .section-title {
@@ -193,19 +200,7 @@ main,
   font-size: 40px;
   color: #bdae82;
   background: #000000;
-  padding-right: 30px;
-  
-}
-
-
-.section-title::before {
-  content: "";
-  position: absolute;
-  top: 57px;
-  left: 12px;  
-  width: 270px; 
-  border: 1px solid #bdae82;
-  
+  padding-right: 30px;  
 }
 
 .section-title::after {
@@ -214,7 +209,8 @@ main,
   top: 57px;
   left: 438px;  
   width: 270px; 
-  border: 1px solid #bdae82;  
+  border: 1px solid #bdae82;
+    
 }
 
 .skills-items {
@@ -275,6 +271,86 @@ main,
   line-height: 35px;  
 }
 
+.portfolio {
+  padding-top: 8px;
+}
+
+.portfolio-menu {
+  padding-top: 25px;
+}
+
+.seasons {
+  display: flex;
+  flex-direction: row;  
+  justify-content: center;
+  align-items: center;  
+  margin-right: 38px;  
+}
+
+.season-link {
+  display: inline-block;
+  text-align: center;  
+  margin-right: 5px;
+  padding: auto;
+  list-style: none;  
+}
+
+.button-season {
+  width: 220px;
+  height: 55px;
+  border: 2px solid #bdae82;
+  background-color: #000000;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  color: #bdae82;
+  transition: 0.3s;
+}
 
 
+.button-season:hover {
+  background-color: #bdae82;
+  color: #000000;
+  transition: 0.3s;
+}
+
+/*.season-link a:hover {
+  list-style: none;
+  text-decoration: none;  
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 50px;
+  color: #000000;
+  transition: 0.3s;
+  background-color: #bdae82;
+}*/
+
+/*---------------------*/
+.button-season.autumn {  
+  background-color: #bdae82;
+  color: #000000;
+}
+
+/*---------------------*/
+
+/*.season-link:hover {
+  color: #bdae82;  
+  transition: 0.3s;
+  cursor: pointer;  
+}*/
+
+.items-portfolio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-top: 44px;
+}
+
+.portfolio-item {
+  width: 450px;
+  height: 560px;
+  margin-bottom: 25px;
+}
 /*border: 1px solid #ffffff;*/
+/*border: 1px solid #00000;*/
