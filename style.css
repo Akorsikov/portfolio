@@ -316,19 +316,21 @@ main,
 
 
 .button-season:hover {
-  background-color: #bdae82;
-  color: #000000;
+  /*background-color: #bdae82;*/
+  color: #ffffff;
   transition: 0.3s;
   cursor: pointer;
 }
 
-/*------------------*/
 .button-season.autumn {  
   background-color: #bdae82;
   color: #000000;
 }
 
-/*---------------------*/
+.button-season.autumn:hover {  
+  /*background-color: #bdae82;*/
+  color: #ffffff;
+}
 
 .items-portfolio {
   display: flex;
@@ -369,5 +371,86 @@ main,
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
 }
-/*border: 1px solid #ffffff;*/
+
+.price-section {
+  margin-top: 82px;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+  padding-top: 40px;
+}
+
+.price-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  
+  width: 450px;
+  height: 505px;
+  border: 2px solid #bdae82;
+}
+
+.standart {
+  margin-left: 2px;
+}
+
+.gold {
+  margin-right: 2px;
+}
+
+.price-package {
+  padding-top: 25px;
+  margin-bottom: 0;
+  font-family: "Merriweather";
+  font-size: 28px;  
+  font-weight: 700;
+  color:#ffffff;  
+}
+
+.price-coast {
+  padding-top: 15px;
+  margin-bottom: 0;
+  font-family: "Merriweather";
+  font-size: 24px;  
+  font-weight: 700;
+  color:#BDAE82;
+}
+
+.price-options {
+  padding-top: 10px;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  line-height: 2em;
+  margin-bottom: 0;
+
+}
+
+.price-button {
+  margin-top: 40px;
+  width: 220px;
+  height: 55px;  
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
+  border: 2px solid #bdae82;
+  background-color:  #bdae82;
+  color: #000000;
+  transition: 0.3s;
+}
+
+.price-button:hover {
+  /*background-color:#000000;*/
+  color: #ffffff;
+  transition: 0.3s;
+  cursor: pointer;
+}
 /*border: 1px solid #00000;*/
