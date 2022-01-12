@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin-top: 2px;
   padding: 0;
   font-family: "Inter";
 }
@@ -76,7 +76,8 @@ main,
   justify-content: flex-end;
   align-items: center;
   list-style: none;
-  padding-right: 5px;    
+  margin-top: -2px;
+  padding-right: 6px;    
 }
 
 .language,
@@ -188,7 +189,7 @@ main,
   overflow-x: hidden;
 }
 
-.section-title::before {
+.wrap-section-title::before {
   content: "";
   position: absolute;
   top: 57px;
@@ -198,16 +199,23 @@ main,
   
 }
 
+/*.wrap-section-title {
+  height: auto;
+  width: 250px;
+  border: 1px solid #ffffff;
+  background: #fff;
+}*/
+
 .section-title {
   font-family: "Merriweather";  
   font-weight: 700;
   font-size: 40px;
   color: #bdae82;
-  background: #000000;
+  background: none;
   padding-right: 30px;  
 }
 
-.section-title::after {
+.wrap-section-title::after {
   content: "";
   position: absolute;
   top: 57px;
@@ -278,8 +286,7 @@ main,
 .portfolio {
   margin-top: 70px;  
   padding-top: 6px;
-  padding-bottom: 0;
-  /*margin-bottom: 0;*/
+  padding-bottom: 0;  
 }
 
 .portfolio-menu {
@@ -315,8 +322,7 @@ main,
 }
 
 
-.button-season:hover {
-  /*background-color: #bdae82;*/
+.button-season:hover {  
   color: #ffffff;
   transition: 0.3s;
   cursor: pointer;
@@ -327,8 +333,7 @@ main,
   color: #000000;
 }
 
-.button-season.autumn:hover {  
-  /*background-color: #bdae82;*/
+.button-season.autumn:hover {    
   color: #ffffff;
 }
 
@@ -337,6 +342,7 @@ main,
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  column-gap: 10px;
   padding-top: 44px;
 }
 
@@ -357,7 +363,6 @@ main,
   justify-content: center;
   align-items: center;  
   padding-top: 42px;
-  /*padding-left: 0px;*/
 }
 
 .player-button {
@@ -447,10 +452,125 @@ main,
   transition: 0.3s;
 }
 
-.price-button:hover {
-  /*background-color:#000000;*/
+.price-button:hover {  
   color: #ffffff;
   transition: 0.3s;
   cursor: pointer;
 }
-/*border: 1px solid #00000;*/
+
+.contacts-section {
+  width: 100%;
+  height: 700px;
+  margin-top: 100px;
+  position: relative;
+  background: url('./assets/img/contacts-bg.jpg');
+  background-size: auto 700px;
+  background-position: center center;
+}
+
+.section-title.contacts {
+  margin-top: 35px;
+}
+.contacts {  
+  margin: 0;
+  padding: 0;  
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 450px;
+  height: 550px;
+  gap: 18px;
+  position: absolute;
+  top: 42px;
+  left: calc(100% - 470px);    
+}
+
+.input-block {  
+  margin-top: 2px;
+  width: auto;
+  height: 50px;
+  border: 2px solid #bdae82;
+  
+}
+
+
+
+.input-block.first {
+  margin-top: 35px;
+  background-color: rgba(red, green, blue, 0.5);
+}
+
+.input-block.second {
+  margin-top: 2px;
+}
+
+.input-block.text-block {
+  height: 100px;  
+}
+
+.email,
+.phone,
+.message {  
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;  
+  font-family: "Inter";  
+  font-size: 20px;
+  color: #bdae82;
+
+}
+
+
+.email,
+.phone {
+  margin-top: 0px;
+  height: 46px;
+  width: 445px;
+  padding-left: 18px;  
+}
+
+.message {
+  height: 95px;
+  padding-top: 12px;
+  padding-left: 19px;  
+  resize: none;  
+}
+
+.contact-button {
+  margin-top: 15px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: #bdae82;
+  transition: background-color 0s ease-in-out 9000s;  
+}
+
+::placeholder {
+  font-family: "Inter";
+  color: #bdae82;
+  font-size: 20px;
+}
+
+.contact-button {  
+  width: 220px;
+  height: 55px;  
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
+  border: 2px solid #bdae82;
+  background-color:  #bdae82;
+  color: #000000;
+  transition: 0.3s;
+}
+
+.contact-button:hover {  
+  color: #ffffff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+/*border: 1px solid #ffffff;*/
