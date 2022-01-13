@@ -16,7 +16,6 @@
   font-weight: 400;
 }
 
-
 * {
   box-sizing: border-box;
 }
@@ -36,8 +35,7 @@ body {
   /*max-width: 1440px;*/
   width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;
-  
+  padding: 0 20px;  
 }
 
 .header,
@@ -94,8 +92,7 @@ main,
 
 .menu-link:hover {
   color: #bdae82;  
-  transition: 0.3s;
-  
+  transition: 0.3s;  
 }
 
 .en {
@@ -195,16 +192,8 @@ main,
   top: 57px;
   left: 0px;  
   width: 235px; 
-  border: 1px solid #bdae82; 
-  
+  border: 1px solid #bdae82;  
 }
-
-/*.wrap-section-title {
-  height: auto;
-  width: 250px;
-  border: 1px solid #ffffff;
-  background: #fff;
-}*/
 
 .section-title {
   font-family: "Merriweather";  
@@ -297,7 +286,9 @@ main,
   display: flex;
   flex-direction: row;  
   justify-content: center;
-  align-items: center;  
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 5px;
   margin-right: 38px;  
 }
 
@@ -306,6 +297,7 @@ main,
   text-align: center;  
   margin-right: 5px;
   padding: auto;
+  
   list-style: none;  
 }
 
@@ -320,7 +312,6 @@ main,
   color: #bdae82;
   transition: 0.3s;
 }
-
 
 .button-season:hover {  
   color: #ffffff;
@@ -352,9 +343,8 @@ main,
   margin-bottom: 25px;
 }
 
-.video {  
-  margin-top: 57px;
- 
+.video-section {  
+  margin-top: 57px; 
 }
 
 .video-player {  
@@ -386,6 +376,7 @@ main,
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
   padding-top: 40px;
 }
@@ -394,8 +385,7 @@ main,
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  
+  align-items: center;  
   width: 450px;
   height: 505px;
   border: 2px solid #bdae82;
@@ -466,11 +456,13 @@ main,
   background: url('./assets/img/contacts-bg.jpg');
   background-size: auto 700px;
   background-position: center center;
+  margin-bottom: 0;
 }
 
 .section-title.contacts {
   margin-top: 35px;
 }
+
 .contacts {  
   margin: 0;
   padding: 0;  
@@ -492,8 +484,7 @@ main,
   margin-top: 2px;
   width: auto;
   height: 50px;
-  border: 2px solid #bdae82;
-  
+  border: 2px solid #bdae82;  
 }
 
 
@@ -519,9 +510,7 @@ main,
   font-family: "Inter";  
   font-size: 20px;
   color: #bdae82;
-
 }
-
 
 .email,
 .phone {
@@ -573,4 +562,77 @@ input:-webkit-autofill:active {
   transition: 0.3s;
   cursor: pointer;
 }
-/*border: 1px solid #ffffff;*/
+
+
+/* --------- footer ---------*/
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;  
+  height: 150px;
+}
+
+.footer-data {  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  height: 55px;  
+  padding-left: 5px;  
+}
+
+.footer-copyright,
+.footer-year,
+.footer-data a,
+.footer-rsschool a {
+  
+  font-family: "Inter";
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;  
+}
+
+.footer-rsschool {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 240px;
+  height: 50px;  
+}
+
+.footer-socials {  
+  width: 230px;
+  height: 70px;  
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;  
+}
+
+.social-item {
+  width: 32px;
+  height: 32px;
+  list-style: none;
+  margin-top: 4px;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+.footer-github:hover,
+.item-rsschool:hover,
+.social-item:hover {
+  opacity: 0.5;
+  transition: 1s;
+}
+
+.footer-github,
+.item-rsschool,
+.social-item {  
+  transition: 1s;
+}
