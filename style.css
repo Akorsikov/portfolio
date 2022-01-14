@@ -177,12 +177,13 @@ main,
   height: 55px;
   font-size: 20px;  
   background-color: #bdae82;
+  transition: 0.4s;
 }
 
 .hero-button:hover {  
   color: #ffffff;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .skills {
@@ -341,18 +342,20 @@ main,
 }
 
 .button-season:hover {  
-  color: #ffffff;
-  transition: 0.3s;
+  color: #ffffff;  
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .button-season.autumn {  
   background-color: #bdae82;
   color: #000000;
+  transition: 0.3s;
 }
 
 .button-season.autumn:hover {    
   color: #ffffff;
+  transition: 0.3s;
 }
 
 .items-portfolio {
@@ -404,12 +407,14 @@ main,
   position: absolute;
   width: 130px;
   height: 130px;
+  transition: 0.3s;
 }
 
 .player-button:hover {
   cursor: pointer;
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
+  transition: 0.3s;
 }
 
 .price-section {
@@ -455,7 +460,7 @@ main,
 }
 
 .price-package {
-  padding-top: 25px;
+  padding-top: 23px;
   margin-bottom: 0;
   font-family: "Merriweather";
   font-size: 28px;  
