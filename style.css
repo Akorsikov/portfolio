@@ -50,11 +50,11 @@ main,
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 90px;  
+  height: 90px;
+  margin-bottom: -20px;  
   background: url('./assets/img/header-bg.jpg');
   background-repeat: no-repeat;
-  background-position: center 0;
-  margin-bottom: -20px;
+  background-position: center 0;  
 }
   
 .logo {
@@ -69,13 +69,12 @@ main,
 }
 
 .nav {
-  margin: 0;
-  padding: 0 0 2px 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  /*border: 1px solid white;*/
+  margin: 0;
+  padding: 0 0 2px 0;  
 }
 
 .menu {
@@ -84,9 +83,8 @@ main,
   justify-content: center;
   align-items: center;
   gap: 15px;
-  list-style: none;
   padding-right: 4px;
-  /*border: 1px solid rgb(44, 155, 44);*/      
+  list-style: none;   
 }
 
 .menu-item {
@@ -102,8 +100,7 @@ main,
   font-weight: 400;
   font-size: 20px;  
   color: #ffffff;
-  transition: 0.3s;
-  /*border: 1px solid rgb(172, 23, 23);*/
+  transition: 0.3s;  
 }
 
 .menu-link:hover {
@@ -146,10 +143,11 @@ main,
 }
 
 .hero-title {
+  margin-bottom: 0;
   font-family: "Merriweather";  
   font-weight: 700;
   font-size: 60px;
-  margin-bottom: 0;  
+   
 }
 
 .hero-text1, 
@@ -181,9 +179,9 @@ main,
   background-color: #bdae82;
 }
 
-.hero-button:hover {
-  cursor: pointer;
+.hero-button:hover {  
   color: #ffffff;
+  cursor: pointer;
   transition: 0.3s;
 }
 
@@ -479,11 +477,10 @@ main,
   font-family: "Inter";
   font-size: 18px;
   font-weight: 400;
+  margin-bottom: 0;
   color: #ffffff;
   text-align: center;
   line-height: 2em;
-  margin-bottom: 0;
-
 }
 
 .price-button {
@@ -506,14 +503,14 @@ main,
 }
 
 .contacts-section {
+  position: relative;
   width: 100%;
   height: 700px;
   margin-top: 100px;
-  position: relative;
+  margin-bottom: 0;  
   background: url('./assets/img/contacts-bg.jpg');
   background-size: auto 700px;
-  background-position: center center;
-  margin-bottom: 0;
+  background-position: center center;  
 }
 
 .contacts-container {
@@ -536,8 +533,6 @@ main,
   margin: 0;
   padding: 0;  
 }
-
-
 
 .input-block {  
   margin-top: 2px;
@@ -564,18 +559,18 @@ main,
 .email,
 .phone,
 .message {  
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;  
   font-family: "Inter";  
   font-size: 20px;
   color: #bdae82;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;  
 }
 
 .email,
-.phone {
-  margin-top: 0px;
+.phone {  
   height: 46px;
   width: 445px;
+  margin-top: 0px;
   padding-left: 18px;  
 }
 
@@ -622,8 +617,6 @@ input:-webkit-autofill:active {
   cursor: pointer;
 }
 
-
-/* --------- footer ---------*/
 .footer-container {
   display: flex;
   flex-direction: row;
