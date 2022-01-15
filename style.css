@@ -100,31 +100,31 @@ main,
   font-weight: 400;
   font-size: 20px;  
   color: #ffffff;
-  transition: 0.3s;  
+  transition: 0.4s;  
 }
 
 .menu-link:hover {
   color: #bdae82;  
-  transition: 0.3s;  
+  transition: 0.4s;  
 }
 
 .en {
   padding-right: 10px;  
   color: #bdae82;
   /*color: #ffffff;*/
-  transition: 0.3s;  
+  transition: 0.4s;  
 }
 
 .ru {
   padding-left: 10px;
   color: #ffffff;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .en:hover, 
 .ru:hover {  
     color: #bdae82;
-    transition: 0.3s;    
+    transition: 0.4s;    
 }
 
 .hero-container {
@@ -338,24 +338,24 @@ main,
   line-height: 50px;
   letter-spacing: 1px;
   color: #bdae82;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .button-season:hover {  
   color: #ffffff;  
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .button-season.autumn {  
   background-color: #bdae82;
   color: #000000;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .button-season.autumn:hover {    
   color: #ffffff;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .items-portfolio {
@@ -407,14 +407,14 @@ main,
   position: absolute;
   width: 130px;
   height: 130px;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .player-button:hover {
   cursor: pointer;
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .price-section {
@@ -498,12 +498,12 @@ main,
   border: 2px solid #bdae82;
   background-color:  #bdae82;
   color: #000000;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .price-button:hover {  
   color: #ffffff;
-  transition: 0.3s;
+  transition: 0.4s;
   cursor: pointer;
 }
 
@@ -586,10 +586,6 @@ main,
   resize: none;  
 }
 
-.contact-button {
-  margin-top: 15px;
-}
-
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -604,7 +600,8 @@ input:-webkit-autofill:active {
   font-size: 20px;
 }
 
-.contact-button {  
+.contact-button {
+  margin-top: 15px;
   width: 220px;
   height: 55px;  
   font-weight: 400;
@@ -613,12 +610,12 @@ input:-webkit-autofill:active {
   border: 2px solid #bdae82;
   background-color:  #bdae82;
   color: #000000;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .contact-button:hover {  
   color: #ffffff;
-  transition: 0.3s;
+  transition: 0.4s;
   cursor: pointer;
 }
 
@@ -679,17 +676,17 @@ input:-webkit-autofill:active {
   list-style: none;
   margin-top: 4px;
   margin-right: 20px;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 .footer-github:hover,
 .item-rsschool:hover,
 .social-item:hover {
   opacity: 0.5;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .footer-github,
 .item-rsschool,
 .social-item {  
-  transition: 0.3s;
+  transition: 0.4s;
 }
