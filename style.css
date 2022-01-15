@@ -50,11 +50,11 @@ main,
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 90px;  
+  height: 90px;
+  margin-bottom: -20px;  
   background: url('./assets/img/header-bg.jpg');
   background-repeat: no-repeat;
-  background-position: center 0;
-  margin-bottom: -20px;
+  background-position: center 0;  
 }
   
 .logo {
@@ -68,50 +68,63 @@ main,
     contrast(87%);
 }
 
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0 0 2px 0;  
+}
+
 .menu {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
-  list-style: none;
-  margin-top: -2px;
-  padding-right: 6px;    
+  gap: 15px;
+  padding-right: 4px;
+  list-style: none;   
+}
+
+.menu-item {
+  margin: 0;
+  padding: 0 1px 2px 0;
 }
 
 .language,
-.menu-link {
-  padding: 0 15px;  
+.menu-link {  
+  padding-right: 15px;  
   list-style: none;
   text-decoration: none;  
   font-weight: 400;
-  font-size: 20px;
-  line-height: 50px;
+  font-size: 20px;  
   color: #ffffff;
-  transition: 0.3s;
+  transition: 0.4s;  
 }
 
 .menu-link:hover {
   color: #bdae82;  
-  transition: 0.3s;  
+  transition: 0.4s;  
 }
 
 .en {
   padding-right: 10px;  
   color: #bdae82;
   /*color: #ffffff;*/
-  transition: 0.3s;  
+  transition: 0.4s;  
 }
 
 .ru {
   padding-left: 10px;
   color: #ffffff;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .en:hover, 
 .ru:hover {  
     color: #bdae82;
-    transition: 0.3s;    
+    transition: 0.4s;    
 }
 
 .hero-container {
@@ -130,10 +143,11 @@ main,
 }
 
 .hero-title {
+  margin-bottom: 0;
   font-family: "Merriweather";  
   font-weight: 700;
   font-size: 60px;
-  margin-bottom: 0;  
+   
 }
 
 .hero-text1, 
@@ -163,12 +177,13 @@ main,
   height: 55px;
   font-size: 20px;  
   background-color: #bdae82;
+  transition: 0.4s;
 }
 
-.hero-button:hover {
-  cursor: pointer;
+.hero-button:hover {  
   color: #ffffff;
-  transition: 0.3s;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 .skills {
@@ -323,22 +338,24 @@ main,
   line-height: 50px;
   letter-spacing: 1px;
   color: #bdae82;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .button-season:hover {  
-  color: #ffffff;
-  transition: 0.3s;
+  color: #ffffff;  
   cursor: pointer;
+  transition: 0.4s;
 }
 
 .button-season.autumn {  
   background-color: #bdae82;
   color: #000000;
+  transition: 0.4s;
 }
 
 .button-season.autumn:hover {    
   color: #ffffff;
+  transition: 0.4s;
 }
 
 .items-portfolio {
@@ -390,12 +407,14 @@ main,
   position: absolute;
   width: 130px;
   height: 130px;
+  transition: 0.4s;
 }
 
 .player-button:hover {
   cursor: pointer;
   filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
     contrast(87%);
+  transition: 0.4s;
 }
 
 .price-section {
@@ -441,7 +460,7 @@ main,
 }
 
 .price-package {
-  padding-top: 25px;
+  padding-top: 23px;
   margin-bottom: 0;
   font-family: "Merriweather";
   font-size: 28px;  
@@ -463,11 +482,10 @@ main,
   font-family: "Inter";
   font-size: 18px;
   font-weight: 400;
+  margin-bottom: 0;
   color: #ffffff;
   text-align: center;
   line-height: 2em;
-  margin-bottom: 0;
-
 }
 
 .price-button {
@@ -480,24 +498,24 @@ main,
   border: 2px solid #bdae82;
   background-color:  #bdae82;
   color: #000000;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .price-button:hover {  
   color: #ffffff;
-  transition: 0.3s;
+  transition: 0.4s;
   cursor: pointer;
 }
 
 .contacts-section {
+  position: relative;
   width: 100%;
   height: 700px;
   margin-top: 100px;
-  position: relative;
+  margin-bottom: 0;  
   background: url('./assets/img/contacts-bg.jpg');
   background-size: auto 700px;
-  background-position: center center;
-  margin-bottom: 0;
+  background-position: center center;  
 }
 
 .contacts-container {
@@ -520,8 +538,6 @@ main,
   margin: 0;
   padding: 0;  
 }
-
-
 
 .input-block {  
   margin-top: 2px;
@@ -548,18 +564,18 @@ main,
 .email,
 .phone,
 .message {  
-  background-color: rgba(0, 0, 0, 0.5);
-  border: none;  
   font-family: "Inter";  
   font-size: 20px;
   color: #bdae82;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;  
 }
 
 .email,
-.phone {
-  margin-top: 0px;
+.phone {  
   height: 46px;
   width: 445px;
+  margin-top: 0px;
   padding-left: 18px;  
 }
 
@@ -568,10 +584,6 @@ main,
   padding-top: 12px;
   padding-left: 19px;  
   resize: none;  
-}
-
-.contact-button {
-  margin-top: 15px;
 }
 
 input:-webkit-autofill,
@@ -588,7 +600,8 @@ input:-webkit-autofill:active {
   font-size: 20px;
 }
 
-.contact-button {  
+.contact-button {
+  margin-top: 15px;
   width: 220px;
   height: 55px;  
   font-weight: 400;
@@ -597,17 +610,15 @@ input:-webkit-autofill:active {
   border: 2px solid #bdae82;
   background-color:  #bdae82;
   color: #000000;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .contact-button:hover {  
   color: #ffffff;
-  transition: 0.3s;
+  transition: 0.4s;
   cursor: pointer;
 }
 
-
-/* --------- footer ---------*/
 .footer-container {
   display: flex;
   flex-direction: row;
@@ -665,17 +676,17 @@ input:-webkit-autofill:active {
   list-style: none;
   margin-top: 4px;
   margin-right: 20px;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 .footer-github:hover,
 .item-rsschool:hover,
 .social-item:hover {
   opacity: 0.5;
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
 .footer-github,
 .item-rsschool,
 .social-item {  
-  transition: 0.3s;
+  transition: 0.4s;
 }
