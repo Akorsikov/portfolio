@@ -1,2 +1,2 @@
 # portfolio
-education project 'Portfolio'
+education project [Portfolio](https://rolling-scopes-school.github.io/akorsikov-JSFEPRESCHOOL/portfolio/)
